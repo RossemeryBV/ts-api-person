@@ -1,0 +1,7 @@
+spring: 
+ application:
+   name: api-person
+ cloud:
+   config:
+     #uri: http://localhost:8889
+     uri: http://${HOST_PORT_CONFIG_SERVER}
