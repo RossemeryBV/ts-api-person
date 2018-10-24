@@ -29,8 +29,6 @@ public class BackendApplication {
 		return localeResolver;
 		
 	}
-	
-	
 	//usamos pq no funciona en el archivo aplication.yml
 	@Bean
 	public ResourceBundleMessageSource messageSource() {
