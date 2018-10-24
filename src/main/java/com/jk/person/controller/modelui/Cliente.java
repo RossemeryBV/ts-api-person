@@ -41,7 +41,7 @@ public class Cliente {
 	private String codDepartamento;
 	private String codUbigeo;
 	private String nombreUbigeo;
-	private String direccion;
+	private String domicilio;
 	private String coordenada;
 	
 	private int idCalificacionCliente;
@@ -112,11 +112,13 @@ public class Cliente {
 	public void setCodDepartamento(String codDepartamento) {
 		this.codDepartamento = codDepartamento;
 	}
-	public String getDireccion() {
-		return direccion;
+	
+	
+	public String getDomicilio() {
+		return domicilio;
 	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setDomicilio(String domicilio) {
+		this.domicilio = domicilio;
 	}
 	public String getCoordenada() {
 		return coordenada;
@@ -239,7 +241,7 @@ public class Cliente {
         	cli.setNombreUbigeo(mc.getCatUbigeo().getNombre());
     	}    	
     	
-    	cli.setDireccion(mc.getDireccion());
+    	cli.setDomicilio(mc.getDireccion());
     	cli.setCoordenada(mc.getCoordenada());
     	cli.setIndActivo(mc.getIndActivo());
     	
@@ -299,7 +301,7 @@ public class Cliente {
     	maeClie.setIdClie(this.id);
     	maeClie.setMaePersNatu(persNatu);
     	maeClie.setCoordenada(this.getCoordenada());
-    	maeClie.setDireccion(this.getDireccion());
+    	maeClie.setDireccion(this.getDomicilio());
     	maeClie.setIndActivo(this.getIndActivo());
     	
     	if(this.getCodUbigeo() != null && !this.getCodUbigeo().isEmpty()) {
