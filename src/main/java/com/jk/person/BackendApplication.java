@@ -13,7 +13,7 @@ import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 
 //@ComponentScan(basePackages = "com.empresa")
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class BackendApplication {
 	
 	//private static Class applicationClass = BackendApplication.class;
