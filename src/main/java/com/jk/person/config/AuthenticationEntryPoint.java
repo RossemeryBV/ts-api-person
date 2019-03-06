@@ -29,5 +29,7 @@ public class AuthenticationEntryPoint extends BasicAuthenticationEntryPoint {
         setRealmName("DeveloperStack");
         super.afterPropertiesSet();
     }
+	
+	//Memy
 
 }
