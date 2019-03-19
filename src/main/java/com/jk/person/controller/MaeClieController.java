@@ -40,7 +40,7 @@ import com.jk.person.service.MaePersService;
 
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/cliente1")
 public class MaeClieController{
 
     @Autowired
