@@ -105,10 +105,12 @@ public class MaeClieServiceImpl implements MaeClieService{
     	
     	int id = maeClie.getIdClie();
     	
-    	for(RelPersMediCont rel:listRel) {
-    		rel.setIdPers(maePers.getIdPers());
-    		rel.setIdTipoMediCont(rel.getCatTipoMediCont().getIdTipoMediCont());
-    		relPersMediContJpaRepository.save(rel);
+    	if(listRel != null) {
+    		for(RelPersMediCont rel:listRel) {
+        		rel.setIdPers(maePers.getIdPers());
+        		rel.setIdTipoMediCont(rel.getCatTipoMediCont().getIdTipoMediCont());
+        		relPersMediContJpaRepository.save(rel);
+        	}
     	}
     	
     	MaePersNatu persNatu = maeClie.getMaePersNatu();
