@@ -1,0 +1,21 @@
+spring:
+ messages:
+    basename: messages
+ application:
+  name: api-person
+ datasource:
+  url: jdbc:mysql://instancia1.cxneuwdbw8mv.us-east-2.rds.amazonaws.com:3306/db_core  
+  username: root
+  password: mypassword
+ jpa:
+  show-sql: true
+  hibernate:
+   dialect: org.hibernate.dialect.MySQL5Dialect
+   ddl-auto: none
+   use-new-id-generator-mappings: false
+ jackson:
+  serialization:
+   fail-on-empty-beans: false
+
+server:
+ port: 8080
