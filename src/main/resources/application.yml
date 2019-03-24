@@ -2,7 +2,7 @@ spring:
  messages:
     basename: messages
  application:
-  name: api-person
+  name: api-person1
  datasource:
   url: jdbc:mysql://instancia1.cxneuwdbw8mv.us-east-2.rds.amazonaws.com:3306/db_core  
   username: root
