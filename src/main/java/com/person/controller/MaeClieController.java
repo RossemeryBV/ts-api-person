@@ -64,9 +64,11 @@ public class MaeClieController{
     
     @GetMapping
     public List<Cliente> listAll(){
+    	
     	// Test Commit 
     	// Send push Jenkins
     	// Enviar comentario para GitHub
+    	
         List<MaeClie> maeClies = maeClieService.listAllActives();
         List<Cliente> clientes = new ArrayList<>();
         for(MaeClie mc: maeClies ) {
