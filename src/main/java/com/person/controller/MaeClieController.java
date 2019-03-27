@@ -55,21 +55,18 @@ public class MaeClieController{
     private ConfigurationTemporal config;
     
     @GetMapping("/hola")
-    //public String probarInternationalized(@RequestHeader(name="Accept-Language",required = false) Locale locale){
     public String probarInternationalized(){
     	System.out.println("-----------_> Properties -Minnum: "+config.getMinnum());
     	System.out.println("-----------_> Properties -Maxnum : "+config.getMaxnum());
     	return messageSource.getMessage("good.morning.message", null , LocaleContextHolder.getLocale());
-    			//locale);
     }
     
     
     @GetMapping
     public List<Cliente> listAll(){
-    	
-    	// prueba del commit 
-    	//send push jenkins
-    	// comentarion de prueba para git
+    	// Test Commit 
+    	// Send push Jenkins
+    	// Enviar comentario para GitHub
         List<MaeClie> maeClies = maeClieService.listAllActives();
         List<Cliente> clientes = new ArrayList<>();
         for(MaeClie mc: maeClies ) {
