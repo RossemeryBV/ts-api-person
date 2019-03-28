@@ -112,6 +112,22 @@ public class MaeClieController{
         return resource;
     }
     
+    //Agregando Código
+    @GetMapping("/serviciopesado")
+    public String servicioPesado(){
+    	System.out.println("Ingreso al metodo");
+    	String var = "test 1";
+    	String var2 = "test 2";
+    	for(int i=0; i<100000; i++) {
+    		var = var+"test 1";
+    		var2 = var2+"test 2";
+    		System.out.println("Código Infinito "+i);
+    	}
+    	System.out.println("Se acabo el metodo");
+        return "Se ejecuto correctamente";
+    }
+    // Fin: Agregando Código
+    
     @PostMapping()    
     public ResponseEntity<?> post(@Valid @RequestBody Cliente cliente){    
     	System.out.println("Guardando cliente");
